@@ -1,2 +1,3 @@
 # ImmutableVector
-C++ implementation of immutable vector from rust
+C++ implementation of immutable vector from Scala
+
