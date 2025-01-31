@@ -20,6 +20,11 @@ public:
         }
     }
 
+    ImmutableVector(const ImmutableVector &other) = delete;
+    ImmutableVector(ImmutableVector &&other) = delete;
+    ImmutableVector operator=(const ImmutableVector &&other) = delete;
+    ImmutableVector operator=(ImmutableVector &&other) = delete;
+
     template <typename Iterator>
     ImmutableVector(Iterator first, Iterator last) : ImmutableVector() {
         while (first != last) {
